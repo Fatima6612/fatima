@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Valentine's Joke</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #message {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Aaaaaaaaaaaa you have to say yes</h2>
+    <button style="width: 600px; height: 250px;" onclick="showMessage(true)">Yes</button>
+    <button style="width: 200px; height: 50px;" onclick="showMessage(false)">No</button>
+
+    <div id="message"></div>
+
+    <script>
+        function showMessage(isYes) {
+            var message = document.getElementById("message");
+            if (isYes) {
+                message.innerHTML = "<p>OK GOOD, NOW SHUU</p>";
+            } else {
+                window.location.href = "page10.html"; // Change to the next page
+            }
+        }
+    </script>
+</body>
+</html>

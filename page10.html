@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Final Page</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #message {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>You have to</h2>
+    <button onclick="showMessage()">OK</button>
+
+
+    <div id="message"></div>
+
+    <script>
+        function showMessage() {
+            var message = document.getElementById("message");
+            message.innerHTML = "<p>OK GOOD, NOW SHUU</p>";
+        }
+    </script>
+</body>
+</html>
